@@ -28,5 +28,6 @@ It includes flexible input fields, advanced data tables, buttons, headers, and p
 
 ### Clone the repo
 ```bash
-git clone https://github.com/faizaqureshi883/react-component-library.git
-cd react-component-library
+git clone https://github.com/faizaibrahim12/project-React.git
+cd project-React
+```
