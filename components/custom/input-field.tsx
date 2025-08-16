@@ -2,7 +2,7 @@
 
 import type React from "react"
 
-import { forwardRef, useState } from "react"
+import { forwardRef, useState, useId } from "react"
 import { cn } from "@/lib/utils"
 import type { InputFieldProps } from "@/lib/types"
 import { X, Eye, EyeOff, Loader2 } from "lucide-react"
@@ -30,7 +30,7 @@ export const InputField = forwardRef<HTMLInputElement, InputFieldProps>(
     },
     ref,
   ) => {
-    const inputId = `input-${Math.random().toString(36).substr(2, 9)}`
+    const inputId = useId()
     const [showPassword, setShowPassword] = useState(false)
 
     const actualType = type === "password" && showPassword ? "text" : type

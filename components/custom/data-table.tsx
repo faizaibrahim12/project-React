@@ -8,7 +8,7 @@ import { Button } from "@/components/ui/button"
 import { InputField } from "@/components/custom/input-field"
 import { ChevronUp, ChevronDown, ChevronLeft, ChevronRight } from "lucide-react"
 
-export function DataTable<T extends { id: string | number }>({
+export function DataTable<T extends { id: string | number }>( {
   data,
   columns,
   loading = false,
